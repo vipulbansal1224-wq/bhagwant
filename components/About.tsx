@@ -21,11 +21,11 @@ export default function About() {
           {/* Left Column Image Collage */}
           <div className="lg:col-span-6 grid grid-cols-2 gap-4">
             <div className="space-y-4">
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
+              <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-64">
                 <img
-                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-rxmdldocna.jpg"
-                  alt="Jetbird Cycle Assembly"
-                  className="w-full h-56 sm:h-72 object-cover object-center hover:scale-105 transition-transform duration-300"
+                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-5037x1uybf.jpg"
+                  alt="Jetbird Mountain Bike Full View"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
               <div className="bg-blue-950 text-white p-6 rounded-2xl shadow-xl space-y-2">
@@ -47,11 +47,11 @@ export default function About() {
                 <p className="text-3xl font-black text-slate-900">5.0★</p>
                 <p className="text-xs text-slate-600">Rated 5 Stars on Justdial with 100% Positive Client Feedback.</p>
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-lg border border-slate-100 bg-slate-50">
+              <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-64">
                 <img
-                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-jw1tpvnsiy.jpg"
-                  alt="Bhagwant Cycle Inventory"
-                  className="w-full h-56 sm:h-72 object-cover object-center hover:scale-105 transition-transform duration-300"
+                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-mq7qfklcki.jpg"
+                  alt="Jetbird Red Trail MTB Full View"
+                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
             </div>
