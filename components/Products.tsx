@@ -153,11 +153,11 @@ export default function Products() {
               className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group"
             >
               {/* Image Container */}
-              <div className="relative h-64 bg-slate-100 overflow-hidden">
+              <div className="relative h-64 bg-slate-50 border-b border-slate-100 p-2 flex items-center justify-center overflow-hidden">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500"
+                  className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                 />
                 {item.badge && (
                   <span className="absolute top-4 left-4 bg-orange-600 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow">
