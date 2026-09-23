@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { CheckCircle2, Factory, Wrench, ShieldAlert, Award, Compass } from "lucide-react";
+import { CheckCircle2, Factory, Award, Compass } from "lucide-react";
 
 export default function About() {
   const highlights = [
@@ -14,51 +14,57 @@ export default function About() {
   ];
 
   return (
-    <section className="py-20 bg-white" id="about">
+    <section className="py-20 bg-white overflow-hidden" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-center">
+        
+        {/* Main Flex Layout with Distinct Left Images & Right Text Gap */}
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-20 xl:gap-28">
           
-          {/* Left Column Image Collage */}
-          <div className="lg:col-span-5 grid grid-cols-2 gap-4">
-            <div className="space-y-4">
-              <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-64">
-                <img
-                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-5037x1uybf.jpg"
-                  alt="Jetbird Mountain Bike Full View"
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="bg-blue-950 text-white p-6 rounded-2xl shadow-xl space-y-2">
-                <div className="flex items-center gap-2 text-orange-400 font-bold">
-                  <Factory className="w-5 h-5" />
-                  Ludhiana Cycle Hub
+          {/* Left Side: Images & Badges (Width Constrained & Pushed Left) */}
+          <div className="w-full lg:w-[45%] shrink-0">
+            <div className="grid grid-cols-2 gap-4">
+              
+              <div className="space-y-4">
+                <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-56">
+                  <img
+                    src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-5037x1uybf.jpg"
+                    alt="Jetbird Mountain Bike Full View"
+                    className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <p className="text-2xl font-black text-white">100% Indian Made</p>
-                <p className="text-xs text-slate-300">Engineered with precision for rugged Indian road conditions.</p>
+                <div className="bg-blue-950 text-white p-5 rounded-2xl shadow-xl space-y-2">
+                  <div className="flex items-center gap-2 text-orange-400 font-bold text-sm">
+                    <Factory className="w-4 h-4" />
+                    Ludhiana Cycle Hub
+                  </div>
+                  <p className="text-xl font-black text-white">100% Indian Made</p>
+                  <p className="text-[11px] text-slate-300">Engineered for Indian road conditions.</p>
+                </div>
               </div>
-            </div>
 
-            <div className="space-y-4 pt-8">
-              <div className="bg-orange-50 p-6 rounded-2xl border border-orange-200 text-orange-950 space-y-2">
-                <div className="flex items-center gap-2 font-bold text-orange-600">
-                  <Award className="w-5 h-5" />
-                  Top Rated Dealer
+              <div className="space-y-4 pt-6">
+                <div className="bg-orange-50 p-5 rounded-2xl border border-orange-200 text-orange-950 space-y-1.5 shadow-sm">
+                  <div className="flex items-center gap-2 font-bold text-orange-600 text-sm">
+                    <Award className="w-4 h-4" />
+                    Top Rated Dealer
+                  </div>
+                  <p className="text-3xl font-black text-slate-900">5.0★</p>
+                  <p className="text-[11px] text-slate-600">Rated 5 Stars on Justdial with 100% Client Feedback.</p>
                 </div>
-                <p className="text-3xl font-black text-slate-900">5.0★</p>
-                <p className="text-xs text-slate-600">Rated 5 Stars on Justdial with 100% Positive Client Feedback.</p>
+                <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-56">
+                  <img
+                    src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-mq7qfklcki.jpg"
+                    alt="Jetbird Red Trail MTB Full View"
+                    className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
               </div>
-              <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-64">
-                <img
-                  src="https://content3.jdmagicbox.com/v2/comp/ludhiana/b2/0161px161.x161.241205215425.w1b2/catalogue/bhagwant-cycle-industries-jetbird-bikes-tibba-ludhiana-bicycle-dealers-mq7qfklcki.jpg"
-                  alt="Jetbird Red Trail MTB Full View"
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
-                />
-              </div>
+
             </div>
           </div>
 
-          {/* Right Column Text */}
-          <div className="lg:col-span-7 space-y-6 lg:pl-4">
+          {/* Right Side: Text & Address (Pushed Right with Clear Middle Gap) */}
+          <div className="w-full lg:w-[50%] space-y-6">
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-blue-200">
               <Compass className="w-4 h-4" />
               About Bhagwant Cycle Industries
