@@ -16,10 +16,10 @@ export default function About() {
   return (
     <section className="py-20 bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-center">
           
           {/* Left Column Image Collage */}
-          <div className="lg:col-span-6 grid grid-cols-2 gap-4">
+          <div className="lg:col-span-5 grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 bg-white p-2 flex items-center justify-center aspect-[4/3] sm:h-64">
                 <img
@@ -58,7 +58,7 @@ export default function About() {
           </div>
 
           {/* Right Column Text */}
-          <div className="lg:col-span-6 space-y-6">
+          <div className="lg:col-span-7 space-y-6 lg:pl-4">
             <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border border-blue-200">
               <Compass className="w-4 h-4" />
               About Bhagwant Cycle Industries
